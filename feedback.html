@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body syle=<head>
+
+  <body style="background-color:darkgrey;">
+    <title> website name </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="climatechange.html">climatechange</a></li>
+        <li><a href="feedback.html">feedback</a></li>
+        <li><a href="about.html">Donations/aboutus</a></li>
+      </ul>
+
+
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        </form>
+        <button onclick="myalert()">submit</button>
+        <!--allowing the pop up window to show up-->
+        <script> function myalert() {alert("Thank you for your submission! ");} </script>
+      </div>
